@@ -3,7 +3,8 @@ Some enlightening instance when follow the cookbook coding.
 从Java基础到Java高级的一些小例子和学习过程中灵光一闪的测试案例。  
 
 ---- 2021-2-26 目前持续更新中 -----  
-现在已有内容: 
+现在已有内容: (前面的dayxx并无实际含义，可忽视)
+
     day01 多进制的测试
     
     day02 两个简单的代码片段
