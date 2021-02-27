@@ -1,5 +1,13 @@
 package day11String;
 
+/**
+ * 测试字符串常量池(在什么情况下会创建新的对象) <br/>
+ * 结论: 利用 "+" 运算符拼接字符串时 会生成新的对象，
+ * 尽管equals()方法结果为真，但是在堆内存里存在两个不同的对象，因此引用变量的值并不相同。
+ * 因此，大量拼接字符串时，应利用StringBuilder类 <br/>
+ * @see StringBuilderTest 测试StringBuilder和String拼接的插入速度 <br/>
+ * @author Nular
+ */
 public class StringConsist {
 	// 静态常量
 	public static final String STR = "123";

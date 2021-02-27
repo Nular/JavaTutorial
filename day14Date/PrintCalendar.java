@@ -4,7 +4,11 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
 
-public class Day15asg01_PrintCal {
+/**
+ * 效仿Linux的格式打印万年历
+ * @author Nular
+ */
+public class PrintCalendar {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("请输入月份和年份");
@@ -56,6 +60,7 @@ public class Day15asg01_PrintCal {
 		}
 	}
 	
+	// 日期表 0对应一月，11对应十二月。
 	private static final String[] MONTHE_STRINGS = {"JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE",
 			"JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"}; 
 	/**

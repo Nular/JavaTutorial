@@ -1,16 +1,16 @@
 package day06InnerClass;
 
 
-public class InnerClass {
+public class InnerClassTest {
 	public static void main(String[] args) {
-		OuterClass.Inner inner = new OuterClass.Inner(10);
-		OuterClass.Inner.print();
+		Outer.Inner inner = new Outer.Inner(10);
+		Outer.Inner.print();
 		System.out.println(inner.getNumber());
 	}
 }
 
-class OuterClass{
-	// 静态内部类，可以直接调用
+class Outer{
+	// 静态内部类，不需要实例化即可直接调用
 	public static class Inner{
 		// 私有属性
 		private int number = 0;
@@ -21,7 +21,7 @@ class OuterClass{
 		}
 		// 静态方法
 		public static void print() {
-			System.out.println("Inner.Print");
+			System.out.println("Inner.Print()");
 		}
 		// getter 和 setter
 		public int getNumber() {

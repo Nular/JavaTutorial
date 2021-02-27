@@ -5,6 +5,10 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+/**
+ * 用于将文件拆分成 {@value SLICE_LENGTH} Byte 大小的块。
+ * @author Nular
+ */
 public class Slicer {
 	public static final int SLICE_LENGTH = 16;
 	public static final String PATH = "src/day23File/haha/haha.txt";

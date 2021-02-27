@@ -1,5 +1,9 @@
 package day14Date;
 
+/**
+ * TODO 意图尝试策略枚举，待完善
+ * @author Nular
+ */
 public enum EnumMonth {
 	JAN(MonthType.BIG),
 	FEB(MonthType.SPECIAL),

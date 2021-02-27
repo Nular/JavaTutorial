@@ -1,5 +1,9 @@
 package day06InnerClass.testAnonymity;
 
+/**
+ * 测试用POJO。
+ * @author Nular
+ */
 public class Emp {
 	private String name;
 	private int salary;

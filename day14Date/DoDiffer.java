@@ -5,7 +5,13 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Scanner;
 
-public class Day15asg03_DoDiffer {
+/**
+ * 日期减法，返回它们相差的天数，这是一种十分常规的比较笨的写法。
+ * 另一种写法见:
+ * @see DoDifferDate
+ * @author Nular
+ */
+public class DoDiffer {
 
 	public static void main(String[] args) throws ParseException {
 		Scanner sc = new Scanner(System.in);
