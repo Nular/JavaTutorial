@@ -5,11 +5,19 @@ import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 测试Comparator接口，通过匿名内部类的形式重写compare方法，达成比较目的。</br>
+ * 这种方法更灵活，适用于一次性排序以及需要修改排序方式时使用。</br>
+ * 但是每次运行都会创建实例，性能堪忧，有两种解决方式:</br>
+ * 	1. 声明一个单例内容，如<tt>privarte static Comparator cmp = new Comparator(){...}</tt> 这样每次调用就不会创建新的实例。
+ * 	2. 使用lambda表达式(1.8及以后)，lambda表达式并不会创建实例，而是直接由jvm处理成内部代码的运行，没有了实例的创建和销毁。代码简洁的同时，运行效率也会更高。
+ * @author Nular
+ */
 public class TestComparator {
 	/**
 	 * Emp静态内部类，用于测试排序
 	 * 为了测试Comparator，此处未实现Comparable接口
-	 * @author Null
+	 * @author Nular
 	 */
 	static class Emp {
 		private int salary;
@@ -45,7 +53,7 @@ public class TestComparator {
 	}
 	@SuppressWarnings("serial")
 	public static void main(String[] args) {
-		// 重写Collocation 的 toString方法方便输出
+		// 重写Collocation 的 toString方法方便输出 实际项目中并不推荐这么写
 		List<Emp> list = new LinkedList<TestComparator.Emp>() {
 			@Override
 			public String toString() {

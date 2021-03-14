@@ -6,7 +6,7 @@ import java.io.ObjectInputStream;
 import java.util.LinkedList;
 import java.util.List;
 
-import day24Stream.Student;
+import day24IOStream.Student;
 
 public class TestLoad {
 	public static final File FILE = new File("src/day24Stream/student.obj");

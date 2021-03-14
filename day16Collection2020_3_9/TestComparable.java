@@ -4,11 +4,14 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-
+/**
+ * 测试Comparable接口。
+ * @author Nular
+ */
 public class TestComparable {
 	/**
 	 * 测试实现Comparable接口后Collocations的sort方法流程。
-	 * @author Null
+	 * @author Nular
 	 */
 	static class Emp implements Comparable<Emp>{
 		private int salary;
@@ -41,7 +44,11 @@ public class TestComparable {
 			this.name = name;
 		}
 
+
 		@Override
+		/**
+		 * 以姓名作为排序依据。
+		 */
 		public int compareTo(Emp anotherEmp) {
 			return this.name.compareTo(anotherEmp.name);
 		}
@@ -50,6 +57,7 @@ public class TestComparable {
 	
 	public static void main(String[] args) {
 		List<Emp> list = new LinkedList<Emp>();
+		list.toString();
 		list.add(new Emp(1000, "emp1"));
 		list.add(new Emp(1200, "emp2"));
 		list.add(new Emp(1100, "emp3"));
